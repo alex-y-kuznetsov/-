@@ -1,0 +1,95 @@
+body {
+  color: #999999;
+  background-color: #ffffff;
+
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+
+  content: "";
+}
+
+/*Reference in Header*/
+.header-reference-section {
+  background-image: linear-gradient(to right, #929292, #cbcbcb, #929292);
+  box-shadow: 0 1px 4px 1px #b3b3b3;
+}
+
+.reference-links {
+  float: left;
+}
+
+.reference-social {
+  float: right;
+}
+
+.reference-links a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 7px;
+  margin: 10px 0;
+  border-left: 2px solid #ffffff;
+}
+
+.reference-links a:last-child {
+  border-right: 2px solid #ffffff;
+}
+
+.reference-social a {
+  display: inline-block;
+  height: 38px;
+  height: 38px;
+  width: 38px;
+  padding: 10px;
+}
+
+/*Search and Contacts in Header*/
+.header-search-section {
+  position: relative;
+}
+
+.search-section-logo {
+  width: 118px;
+  height: 100px;
+  float: left;
+  margin-right: 210px;
+}
+
+.search-section-tools {
+  width: 420px;
+  float: right;
+  margin-right: 195px;
+}
+
+.search-section-basket {
+  position: absolute;
+  right: 0;
+  height: 160px;
+  width: 136px;
+  background-image: linear-gradient(to top, #b70b0b, #f22929);
+}
+
+.search-section-basket::after {
+  display: table;
+  clear: both;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 23px 68px 0 68px;
+  border-color: #b70b0b transparent transparent transparent;
+  position: absolute;
+  bottom: -22px;
+}
