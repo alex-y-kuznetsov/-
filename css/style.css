@@ -75,10 +75,12 @@ body {
 
 .search-section-basket {
   position: absolute;
-  right: 0;
+  right: 10px;
   height: 160px;
   width: 136px;
   background-image: linear-gradient(to top, #b70b0b, #f22929);
+  z-index: 10;
+  box-shadow: 0 1px 4px 1px #b3b3b3;
 }
 
 .search-section-basket::after {
@@ -92,4 +94,31 @@ body {
   border-color: #b70b0b transparent transparent transparent;
   position: absolute;
   bottom: -22px;
+  z-index: 11;
+}
+
+/*Navigation in Header*/
+.header-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #cac9c9;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 1px #b3b3b3;
+}
+
+.header-menu li {
+  display: inline-block;
+  border-right: 2px solid #a0a0a0;
+  padding: 13px 30px;
+  margin: 0;
+}
+
+.header-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  vertical-align: middle;
 }
