@@ -115,10 +115,87 @@ body {
   margin: 0;
 }
 
+.header-menu li:first-child {
+  padding-left: 37px;
+}
+
 .header-menu a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 18px;
   vertical-align: middle;
+}
+
+.header-breadcrumbs {
+  padding: 18px 37px ;
+}
+
+.header-breadcrumbs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-breadcrumbs li {
+  display: inline-block;
+}
+
+.header-breadcrumbs a {
+  text-decoration: none;
+  margin-right: 22px;
+  font-size: 16px;
+  color: #e51616;
+}
+
+.header-breadcrumbs li:first-child {
+  position: relative;
+}
+
+.header-breadcrumbs li:first-child a {
+  text-transform: uppercase;
+  color: #858484;
+  text-decoration: underline;
+}
+
+.header-breadcrumbs li:not(:last-child)::after {
+  display: table;
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 14px;
+  border-color: transparent transparent transparent #858484;
+}
+
+/*Banner*/
+.banner-image {
+  width: 1000px;
+  height: 320px;
+  position: relative;
+}
+
+.banner-switch {
+  position: absolute;
+}
+
+.banner-switch input[type="button"] {
+  display: none;
+}
+
+.banner-switch img {
+  cursor: pointer;
+}
+
+.banner-switch-prev {
+  left: 4px;
+  top: 50%;
+}
+
+.banner-switch-next {
+  right: 4px;
+  top: 50%;
 }
