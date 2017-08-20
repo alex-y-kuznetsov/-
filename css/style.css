@@ -199,3 +199,33 @@ body {
   right: 4px;
   top: 50%;
 }
+
+.banner-pins {
+  width: 130px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.pin {
+  width: 23px;
+  height: 15px;
+  background-color: #858484;
+  margin-right: 4px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 7px;
+  vertical-align: middle;
+  border: none;
+}
+
+.pin-active {
+  width: 29px;
+  height: 19px;
+  background-color: #ea2020;
+  border-radius: 10px;
+}
+
+.pin:last-child {
+  margin-right: 0;
+}
