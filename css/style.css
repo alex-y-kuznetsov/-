@@ -386,12 +386,101 @@ h3 {
   margin: 12px 0;
 }
 
+.shop-item img {
+  margin: 5px auto;
+  display: block
+}
+
+.shop-item h1 {
+  font-size: 18px;
+  color: #494848;
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.shop-item p {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.shop-item p span {
+  font-size: 22px;
+  color: #ea2020;
+}
+
+.shop-item button span,
+.shop-item button img {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.shop-item button span {
+  margin-right: 3px;
+}
+
+.shop-item button {
+  display: block;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #b70b0b, #ea2424);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.new-item {
+  position: relative;
+}
+
+.new-item::before {
+  display: table;
+  content: "";
+  background-image: url("../img/new-ribbon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -18px;
+  top: -33px;
+  width: 100px;
+  height: 120px;
+}
+
 .news-item {
   width: 350px;
   height: 156px;
   border: 2px solid #8c8b8b;
   border-radius: 7px;
   margin: 12px 0;
+}
+
+.more-items {
+  text-align: right;
+}
+
+.more-items a {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-right: 29px;
+  color: #858484;
+  position: relative;
+}
+
+.more-items a::after {
+  display: table;
+  content: "";
+  background-image: url("../img/read-more-icon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -38px;
+  top: 0px;
+  width: 27px;
+  height: 27px;
 }
 
 /*Footer*/
