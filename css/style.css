@@ -72,14 +72,14 @@ h3 {
   width: 198px;
   height: 115px;
   float: left;
-  margin-right: 180px;
+  margin-right: 175px;
   background: url("../img/logo.png") no-repeat;
 }
 
 .search-section-tools {
   width: 420px;
   float: right;
-  margin-right: 195px;
+  margin-right: 203px;
 }
 
 .search-section-contacts {
@@ -96,7 +96,7 @@ h3 {
 }
 
 .contacts-phone {
-  margin-right: 90px;
+  margin-right: 112px;
 }
 
 .contacts-phone::before {
@@ -123,6 +123,30 @@ h3 {
   height: 33px;
 }
 
+.search-section-field input[type="search"] {
+  width: 415px;
+  height: 39px;
+  border: 2px solid #bdbdbd;
+  border-radius: 7px;
+  position: relative;
+}
+
+.search-section-field {
+  position: relative;
+}
+
+.search-section-field::after {
+  display: table;
+  content: "";
+  background-image: url("../img/lens-icon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 15px;
+  top: 6px;
+  width: 27px;
+  height: 27px;
+}
+
 .search-section-basket {
   position: absolute;
   right: 10px;
@@ -131,6 +155,20 @@ h3 {
   background-image: linear-gradient(to top, #b70b0b, #f22929);
   z-index: 10;
   box-shadow: 0 1px 4px 1px #b3b3b3;
+}
+
+.search-section-basket span {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+  margin: 55px 26px;
+  margin-bottom: 10px;
+}
+
+.basket-img-large {
+  display: block;
+  margin: 0 auto;
 }
 
 .search-section-basket::after {
@@ -243,18 +281,19 @@ h3 {
 
 .banner-switch-prev {
   left: 4px;
-  top: 50%;
+  top: 133px;
 }
 
 .banner-switch-next {
   right: 4px;
-  top: 50%;
+  top: 133px;
 }
 
 .banner-pins {
   width: 130px;
   margin: 0 auto;
   margin-top: 10px;
+  margin-bottom: 33px;
   padding: 0;
 }
 
