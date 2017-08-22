@@ -1,7 +1,6 @@
 body {
   color: #999999;
   background-color: #ffffff;
-
   font-family: 'PT Sans Narrow', Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -25,7 +24,6 @@ h3 {
 .clearfix::after {
   display: table;
   clear: both;
-
   content: "";
 }
 
@@ -667,4 +665,15 @@ h3 {
   margin: 0;
   padding-left: 7px;
   padding-top: 9px;
+}
+
+/*Status Effects*/
+a:active,
+button:active {
+  color: #858484;
+}
+
+a:hover,
+button:hover {
+  color: #000000;
 }
