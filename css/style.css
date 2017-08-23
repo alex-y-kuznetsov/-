@@ -16,6 +16,11 @@ h3 {
   padding: 0;
 }
 
+input,
+button {
+  outline: none;
+}
+
 .container {
   width: 1000px;
   margin: 0 auto;
@@ -133,16 +138,17 @@ h3 {
   position: relative;
 }
 
-.search-section-field::after {
-  display: table;
-  content: "";
+.search-section-field input[type="submit"] {
   background-image: url("../img/lens-icon.png");
+  background-color: #ffffff;
   background-repeat: no-repeat;
   position: absolute;
   right: 15px;
   top: 6px;
   width: 27px;
   height: 27px;
+  border: none;
+  cursor: pointer;
 }
 
 .search-section-basket {
@@ -155,13 +161,19 @@ h3 {
   box-shadow: 0 1px 4px 1px #b3b3b3;
 }
 
-.search-section-basket span {
+.search-section-basket a:first-child {
   font-size: 18px;
   color: #ffffff;
   text-transform: uppercase;
   display: block;
-  margin: 55px 26px;
+  text-align: center;
+  margin-top: 55px;
   margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.search-section-basket a:first-child:hover {
+  color: #000000;
 }
 
 .basket-img-large {
@@ -198,20 +210,21 @@ h3 {
 .header-menu li {
   display: inline-block;
   border-right: 2px solid #a0a0a0;
-  padding: 12px 30px;
-  margin: 0;
+  height: 100%;
 }
 
 .header-menu li:first-child {
-  padding-left: 37px;
+  padding-left: 7px;
 }
 
 .header-menu a {
+  padding: 12px 30px;
+  display: block;
+
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 18px;
-  vertical-align: middle;
 }
 
 .header-breadcrumbs {

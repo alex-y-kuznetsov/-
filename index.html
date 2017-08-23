@@ -6,7 +6,7 @@
   <title>Мастерская Серебра</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
 
@@ -40,11 +40,14 @@
           <span class="contacts-email">info@evamax.ru</span>
         </div>
         <div class="search-section-field">
-          <input type="search">
+          <form action="#" method="get">
+            <input type="search" name="searchfield">
+            <input type="submit" value="" name="submit-searchfield">
+          </form>
         </div>
       </div>
       <div class="search-section-basket">
-        <span>Корзина (0)</span>
+        <a href="#">Корзина (0)</a>
         <a href="#"><img class="basket-img basket-img-large" src="img/cart-icon-large.png" alt="Basket"></a>
       </div>
     </section>
