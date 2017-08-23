@@ -96,6 +96,7 @@ button {
   color: #f32828;
   padding-left: 40px;
   position: relative;
+  text-decoration: none;
 }
 
 .contacts-phone {
@@ -282,13 +283,13 @@ button {
   position: absolute;
 }
 
-.banner-switch input[type="button"] {
+/*.banner-switch input[type="button"] {
   display: none;
-}
+}*/
 
-.banner-switch img {
+/*.banner-switch img {
   cursor: pointer;
-}
+}*/
 
 .banner-switch-prev {
   left: 4px;
@@ -298,6 +299,24 @@ button {
 .banner-switch-next {
   right: 4px;
   top: 133px;
+}
+
+.banner-switch button {
+
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 47px;
+  height: 47px;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-switch-next button {
+  background-image: url("../img/icon-next.png");
+}
+
+.banner-switch-prev button {
+  background-image: url("../img/icon-prev.png");
 }
 
 .banner-pins {
