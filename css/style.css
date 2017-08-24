@@ -133,6 +133,8 @@ button {
   border: 2px solid #bdbdbd;
   border-radius: 7px;
   position: relative;
+  padding-left: 10px;
+  padding-right: 45px;
 }
 
 .search-section-field {
@@ -358,10 +360,43 @@ button {
   padding: 7px;
 }
 
-.side-menu h3 {
+.side-menu .subsection {
   border-bottom: 2px solid #a2a2a2;
   padding: 7px;
   padding-top: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+  display: block;
+  position: relative;
+}
+
+.side-menu .subsection-active::after {
+  display: table;
+  content: "";
+  background-image: url("../img/catalog-active-icon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 7px;
+  bottom: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.side-menu .subsection-inactive::after {
+  display: table;
+  content: "";
+  background-image: url("../img/catalog-inactive-icon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 7px;
+  bottom: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.side-menu .catalog-inner li a {
+  text-decoration: underline;
 }
 
 .side-menu a {
@@ -392,6 +427,21 @@ button {
 .main-content {
   float: right;
   width: 715px;
+  position: relative;
+}
+
+.up-btn {
+  background-color: #b1b0b0;
+  background-image: url(../img/icon-to-top.png);
+  background-repeat: no-repeat;
+  background-position: 50% 45%;
+  position: absolute;
+  border-radius: 50%;
+  right: -50px;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 1px 4px 1px #b3b3b3;
 }
 
 .popular-items,
@@ -696,11 +746,6 @@ button {
 }
 
 /*Status Effects*/
-a:active,
-button:active {
-  color: #858484;
-}
-
 a:hover,
 button:hover {
   color: #000000;
