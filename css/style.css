@@ -756,3 +756,38 @@ button:hover {
 .social img:hover {
   border-radius: 50%;
 }
+
+.catalog-rings:hover .catalog-hidden {
+  display: block;
+}
+.catalog-rings:hover .subsection-inactive::after {
+  background-image: url("../img/catalog-active-icon.png");
+}
+
+.catalog-pendants:hover .catalog-hidden {
+  display: block;
+}
+.catalog-pendants:hover .subsection-inactive::after {
+  background-image: url("../img/catalog-active-icon.png");
+}
+
+.catalog-earrings:hover .catalog-hidden {
+  display: block;
+}
+.catalog-earrings:hover .subsection-inactive::after {
+  background-image: url("../img/catalog-active-icon.png");
+}
+
+.catalog-bracelets:hover .catalog-hidden {
+  display: block;
+}
+.catalog-bracelets:hover .subsection-inactive::after {
+  background-image: url("../img/catalog-active-icon.png");
+}
+
+.catalog-chains:hover .catalog-hidden {
+  display: block;
+}
+.catalog-chains:hover .subsection-inactive::after {
+  background-image: url("../img/catalog-active-icon.png");
+}
