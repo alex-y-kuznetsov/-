@@ -8,6 +8,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
 </head>
 
 <body>
@@ -79,8 +80,17 @@
 
     <!-- Banner -->
     <section class="banner-section">
-      <div class="banner-image">
-        <a href="#"><img src="img/banner.jpg" alt="Новинка: Коллекция цепочек и серебра" width="1000" height="320"></a>
+      <div class="banner-image cycle-slideshow"
+           data-cycle-fx="scrollHorz"
+           data-cycle-timeout="10000"
+           data-cycle-speed="1000"
+           data-cycle-slides="a"
+           data-cycle-pager=".custom-pager"
+           data-cycle-pager-template=" <a href='#' class='custom-pager-button'> </a>">
+        <a href="/page1.html"><img src="img/banner.jpg"></a>
+        <a href="/page2.html"><img src="img/banner.jpg"></a>
+        <a href="/page3.html"><img src="img/banner.jpg"></a>
+        <a href="/page4.html"><img src="img/banner.jpg"></a>
         <div class="banner-switch banner-switch-prev">
           <button></button>
         </div>
@@ -88,11 +98,7 @@
           <button></button>
         </div>
       </div>
-      <div class="banner-pins">
-        <input type="button" class="pin">
-        <input type="button" class="pin">
-        <input type="button" class="pin">
-        <input type="button" class="pin pin-active">
+      <div class="banner-pins custom-pager">
       </div>
     </section>
 

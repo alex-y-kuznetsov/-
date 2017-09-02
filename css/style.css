@@ -284,6 +284,7 @@ button {
 
 .banner-switch {
   position: absolute;
+  z-index: 101;
 }
 
 .banner-switch-prev {
@@ -313,15 +314,16 @@ button {
   background-image: url("../img/icon-prev.png");
 }
 
-.banner-pins {
+.custom-pager {
   width: 130px;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 33px;
   padding: 0;
+  overflow: hidden;
 }
 
-.pin {
+a.custom-pager-button {
   width: 23px;
   height: 15px;
   background-color: #858484;
@@ -331,9 +333,10 @@ button {
   border-radius: 7px;
   vertical-align: middle;
   border: none;
+  overflow: hidden;
 }
 
-.pin-active {
+.custom-pager a.cycle-pager-active {
   width: 29px;
   height: 19px;
   background-color: #ea2020;
