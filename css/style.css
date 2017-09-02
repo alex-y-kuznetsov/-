@@ -567,7 +567,7 @@ button {
 }
 
 .news-item-stats {
-  width: 100px;
+  width: 110px;
   float: left;
   overflow: visible;
 }
@@ -579,6 +579,7 @@ button {
 .news-item-stats span {
   font-size: 12px;
   padding-left: 25px;
+  display: block;
 }
 
 .news-time,
@@ -612,7 +613,7 @@ button {
 
 .news-item-content {
   float: right;
-  width: 235px;
+  width: 230px;
 }
 
 .news-item h1 {
