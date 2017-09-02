@@ -758,6 +758,10 @@ button:hover {
   border-radius: 50%;
 }
 
+.up-btn:hover {
+  background-color: #000000;
+}
+
 .catalog-rings:hover .catalog-hidden {
   display: block;
 }
