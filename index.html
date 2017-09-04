@@ -86,16 +86,18 @@
            data-cycle-speed="1000"
            data-cycle-slides="a"
            data-cycle-pager=".custom-pager"
+           data-cycle-next=".cycle-next"
+           data-cycle-prev=".cycle-prev"
            data-cycle-pager-template=" <a href='#' class='custom-pager-button'> </a>">
-        <a href="/page1.html"><img src="img/banner.jpg"></a>
-        <a href="/page2.html"><img src="img/banner.jpg"></a>
-        <a href="/page3.html"><img src="img/banner.jpg"></a>
-        <a href="/page4.html"><img src="img/banner.jpg"></a>
+        <a href="/page1.html"><img name="img" src="img/banner.jpg"></a>
+        <a href="/page2.html"><img name="img" src="img/banner.jpg"></a>
+        <a href="/page3.html"><img name="img" src="img/banner.jpg"></a>
+        <a href="/page4.html"><img name="img" src="img/banner.jpg"></a>
         <div class="banner-switch banner-switch-prev">
-          <button></button>
+          <button class="cycle-prev"></button>
         </div>
         <div class="banner-switch banner-switch-next">
-          <button></button>
+          <button class="cycle-next"></button>
         </div>
       </div>
       <div class="banner-pins custom-pager">
